@@ -12,9 +12,6 @@ button.onclick = () =>{
     image.src = "./footage/images/dde1f553755c0cd2ca99187b4b7d0b3a.jpg";
     container.appendChild(image)
     image.style.width = "40%";
-    if(window.innerWidth < 767){
-        image.style.width = "75%"
-    }
     let text = document.createElement("p");
     container.appendChild(text);
     text.textContent  = "if you move you're gay"
@@ -28,6 +25,10 @@ button.onclick = () =>{
     text.style.zIndex = "2"
     const bgmusic1 =   document.getElementById("cowboy");
     bgmusic1.play();        
+    if(window.innerWidth <= 767){
+        image.style.width = "100%"
+        text.style.width = "100%"
+    }
     setTimeout(() =>{
         image.src = "./footage/images/Cadasadssadpture-removebg-preview.png";
         image.style.height = "100%"
@@ -58,6 +59,10 @@ button.onclick = () =>{
             text.style.top = ""
             bgmuic2.pause();
             bgmusic1.play();
+            if(window.innerWidth <= 767){
+                image2.style.width = "100%"
+                text.style.width = "100%"
+            }
             setTimeout(()=>{
                 image.src = "./footage/images/Untitled Project.jpg";
                 image2.style.display = "none";
@@ -87,6 +92,12 @@ button.onclick = () =>{
                         </div>                        
                         </div>
                         <style>
+                        body{
+                            height:190vh;
+                        }
+                        .main-container{
+                            justify-content:space-between;
+                        }
                         h1{
                             font-size:30px;
                             text-transform:capitalize;
@@ -172,6 +183,11 @@ button.onclick = () =>{
                                         height:100%;
                                         object-fit:cover;
                                     }
+                                    @media (max-width:767px){
+                                        video{
+                                            width:100%;
+                                        }
+                                    }
                                 </style>
                             `
                                     break
@@ -184,6 +200,11 @@ button.onclick = () =>{
                                         width:50%;
                                         height:100%;
                                         object-fit:cover;
+                                    }
+                                    @media (max-width:767px){
+                                        video{
+                                            width:100%;
+                                        }
                                     }
                                 </style>
                             `

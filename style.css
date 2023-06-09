@@ -34,3 +34,8 @@ body{
     color: #fff;
     border: #f00;
 }
+@media (max-width:767px){
+    .main-container button.click{
+        width: 50%;
+    }
+}
