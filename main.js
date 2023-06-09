@@ -93,7 +93,7 @@ button.onclick = () =>{
                         </div>
                         <style>
                         body{
-                            height:190vh;
+                            height:100vh;
                         }
                         .main-container{
                             justify-content:space-between;
@@ -145,6 +145,9 @@ button.onclick = () =>{
                             border: #000;
                         }
                         @media (max-width: 767px){
+                            body{
+                                height:190vh;
+                            }
                             .leaders{
                                 width:100%;
                                 flex-direction:column;
